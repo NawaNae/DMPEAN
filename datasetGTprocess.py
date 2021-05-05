@@ -3,8 +3,8 @@ import shutil
 import re
 
 match = "[SM]_Img_.*_D\d{1,2}_L\d{1,2}_r35_a-{0,1}\d{1,2}_b-{0,1}\d{1,2}\.jpg"
-datasetImgPath="./dataset/Captured_Images/"
-datasetGTImgPath="./dataset/Ground_truth_picture/"
+datasetImgPath="./dataset/smartDocQA/Captured_Images/"
+datasetGTImgPath="./dataset/smartDocQA/Ground_truth_picture/"
 srcPath,dstPath=[f"{datasetImgPath}Nokia_phone/Images/",f"{datasetImgPath}Samsung_phone/Images/"],[f"{datasetGTImgPath}Nokia_phone/Images/",f"{datasetGTImgPath}Samsung_phone/Images/"]
 pathes=zip(srcPath,dstPath)
 for srcP,dstP in pathes:

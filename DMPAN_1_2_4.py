@@ -210,9 +210,9 @@ def main():
             crop=True,
             crop_size=IMAGE_SIZE,
             transform=transforms.Compose([
-                transforms.ToTensor(),
                 transforms.Resize((1280, 720)),
                 transforms.CenterCrop(256),
+                transforms.ToTensor(),
             ]))
         uploader = transforms.ToPILImage()
         print(len(dataset))
